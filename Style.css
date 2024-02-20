@@ -1,0 +1,21 @@
+        <style>
+		
+        /* Heading 1 styles */
+        h1 {
+            color: blue;
+            font-size: 24px; font-weight : bold;
+        }
+          /* Paragraph Styles */
+        p {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            font-size: 20px; text-decoration: underline;
+			color :
+        }
+          /* List Styles *//
+        ul {
+            list-style-type: square; text-decoration: underline;
+        }
+		
+    </style>
+
