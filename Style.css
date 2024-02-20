@@ -1,21 +1,37 @@
-        <style>
-		
-        /* Heading 1 styles */
         h1 {
-            color: blue;
+            color : #FF0000;
             font-size: 24px; font-weight : bold;
         }
           /* Paragraph Styles */
         p {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            font-size: 20px; text-decoration: underline;
-			color :
-        }
+            font-size: 20px; 
+			text-decoration: underline;
+			font-weight : bold;
+	}
           /* List Styles *//
         ul {
-            list-style-type: square; text-decoration: underline;
-        }
-		
-    </style>
-
+            list-style-type: square; 
+			text-decoration: 
+			underline; 
+			font-weight : bold
+			}
+			/* Custom Class Styles */
+		  color: #FF0000 /* Bullet Point 1 */
+		  }
+		 .Black {
+		 color: #000000  /* Bullet Point 2 */
+		 }
+		 .Darkblue {
+		 color: #00008B	 /* Bullet Point 3 */
+		 }
+        .Darkgrey {
+         color: #333333		/* Bullet Point 4 */ 
+		 }
+        .BrightCyan {
+		color: #00FFFF		/* Bullet Point 5 */
+		}
+		.BrightMagenta {
+		color: #FF00FF      /* Bullet Point 6 */
+		}	  
