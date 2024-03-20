@@ -78,14 +78,13 @@ h1, .caption, p {
 .brightmagenta { border-color: #F0F; }
 
 .footer img {
-    width: 100px; 
-    height: auto;
-    border-radius: 50%; /* Circular images */
+    max-width: 20%;
+    max-height: 20%;
     border: 3px solid white; /* White border for contrast */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
     transition: transform 0.3s ease; 
 }
-
 .footer img:hover {
     transform: scale(1.1); 
 }
+/* Next Page */
