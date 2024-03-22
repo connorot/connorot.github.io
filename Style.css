@@ -1,14 +1,13 @@
-body {
+.body1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e0e0e0;
-    color: #333;
     line-height: 1.6;
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.footer {
+.footer1 {
     background-color: #222;
     color: #fff;
     padding: 20px 0;
@@ -20,7 +19,7 @@ body {
 }
 
 h1, .caption, p {
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
@@ -30,7 +29,55 @@ h1, .caption, p {
     text-decoration: underline;
     font-size: large;
 }
+.flexbox_container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(10, 173, 10)
+}
 
+.flexbox_container > div {
+    font-size: 24px;
+}
+.flex-link {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Light color for the text */
+    border: 3px solid transparent; /* Initially the border is transparent */
+    padding: 10px;
+    border-radius: 10px; /* Gives a rounded corner to the border */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  .flex-link:hover {
+    background-color: #555; 
+    border-color: aqua; 
+    color: lightgreen; 
+    box-shadow: 0 0 8px lightblue; /* Adds light around the text link */
+  }
+
+
+/*navbar ul {
+        list-style-type: none;
+        background-color: hsl(0, 0%, 25%);
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 4px;
+    display: block;
+    text-align: start;
+    padding-block-start: 10px;
+    margin-right: 565px;
+  } 
+navbar a:hover{
+    background-color: black (0, 0%, 10%);
+}
+navbar li{
+    float: left;
+    min-width: 33%;
+
+}*/
 .content-table {
     border: 2px solid #ddd; 
     width: 100%;
@@ -77,14 +124,134 @@ h1, .caption, p {
 .brightcyan { border-color: #0FF; }
 .brightmagenta { border-color: #F0F; }
 
-.footer img {
+.footer1 img {
     max-width: 20%;
     max-height: 20%;
     border: 3px solid white; /* White border for contrast */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
     transition: transform 0.3s ease; 
 }
-.footer img:hover {
+.footer1 img:hover {
     transform: scale(1.1); 
 }
-/* Next Page */
+/* Cute Photo's */
+.body2, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.about-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.about-header, .about-nav, .about-main, .about-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.about-nav {
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    border: 2px solid #333; /* Dark border for the navigation (button) */
+}
+
+.about-back-button {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px; /* Add some padding around the text */
+    border-radius: 5px; /* Optional: round the corners of the button */
+    transition: all 0.3s ease;
+}
+.about-back-button:hover{
+    background-color: #555; 
+    border-color: aqua; 
+    color: lightgreen; 
+    box-shadow: 0 0 8px lightblue;
+}
+
+.about-body-content {
+    flex: 1; /* Grow to use available space */
+    padding: 20px;
+    max-width: 800px; /* Maximum width of the content */
+    margin: auto; /* Center the content */
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.about-footer2 {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* About Me */
+/*body {
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox Layout */
+.header, .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+.nav, .main-container, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.main-container {
+    flex-direction: row; /* Use 'column' for a vertical layout */
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.article {
+    flex: 3; 
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.section {
+    background-color: white;
+    margin-top: 44px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.aside {
+    flex: 1; /* Adjust this value to give more or less space to the aside */
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.footer2 {
+    background-color: #aaa;
+    padding: 10px;
+}
