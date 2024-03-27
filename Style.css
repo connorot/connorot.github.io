@@ -1,3 +1,4 @@
+/* index */
 .body1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e0e0e0;
@@ -19,7 +20,6 @@
 }
 
 h1, .caption, p {
-    /*background-color: #ffffff;*/
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
@@ -134,12 +134,7 @@ navbar li{
 .footer1 img:hover {
     transform: scale(1.1); 
 }
-/* Cute Photo's */
-.body2, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -154,88 +149,132 @@ navbar li{
 }
 
 .about-header {
-    background-color: #4CAF50;
+    background-color:#67bb55f0;;
     color: white;
     padding: 20px 0;
     width: 100%;
 }
 
 .about-nav {
-    background-color: #f4f4f4;
+    background-color: #fff0;
     width: 100%;
     padding: 10px 0;
-    display: flex;
-    justify-content: center; /* Center the button horizontally */
-    border: 2px solid #333; /* Dark border for the navigation (button) */
 }
 
 .about-back-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 20px; /* Add some padding around the text */
-    border-radius: 5px; /* Optional: round the corners of the button */
+    border-radius: 12px;
     transition: all 0.3s ease;
 }
-.about-back-button:hover{
-    background-color: #555; 
-    border-color: aqua; 
-    color: lightgreen; 
+
+.about-back-button:hover {
+    background-color: #555;
+    color: lightgreen;
     box-shadow: 0 0 8px lightblue;
 }
 
-.about-body-content {
-    flex: 1; /* Grow to use available space */
-    padding: 20px;
-    max-width: 800px; /* Maximum width of the content */
-    margin: auto; /* Center the content */
+.photo-gallery {
     display: flex;
-    flex-direction: column;
-    float: left;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
-.about-footer2 {
+.photo-item {
+    margin: 10px;
+    box-shadow: 0 0 10px #ccc;
+    transition: transform 0.3s ease;
+}
+
+.photo-item img {
+    width: 100%; /* Adjust based on preference */
+    height: auto;
+    border-radius: 10px;
+}
+
+.photo-item:hover {
+    transform: scale(1.05);
+}
+
+.about-footer {
     background-color: #222;
     color: white;
     padding: 20px 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
 /* About Me */
-/*body {
-    font-family: Arial, sans-serif;
-}
 
 /* Flexbox Layout */
 .header, .footer {
     text-align: center;
     padding: 20px;
-    background-color: #f3f3f3;
+    background-color: rgb(10, 173, 10);
 }
 
-.nav, .main-container, .footer {
+.main-container, .footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.nav {
-    background-color: #ddd;
-    padding: 10px;
+.navbar2 {
+    background-color: #333; 
+    overflow: hidden; /* Ensures the content is contained within the navigation bar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    border-bottom: 2px solid #555; 
 }
+
+.navbar2 a {
+    float: left; /* Align links side by side */
+    display: block; /* Change links from inline to block elements */
+    color: white; /* Text color */
+    text-align: center; /* Center the text inside the link */
+    padding: 16px 20px; 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.navbar2 a:hover {
+    background-color: #ddd; /* Light grey */
+    color: black; /* Black text */
+}
+
+.button2 {
+    background-color: #4CAF50; /* Green background */
+    border: none; 
+    color: white; 
+    padding: 12px 24px; /* Adjusted padding for a better shape */
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 14px; 
+    margin: 5px 10px; 
+    cursor: pointer; 
+    border-radius: 20px; /* More pronounced rounded borders for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+.button2 :hover {
+    background-color: #45a049; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
 
 .main-container {
     flex-direction: row; /* Use 'column' for a vertical layout */
     justify-content: space-around;
-    padding: 20px;
+    padding: 0px;
 }
 
 .article {
     flex: 3; 
     padding: 20px;
     background-color: #f9f9f9;
+    border: #aaa;
+    border-radius: 0%;
 }
 
 .section {
@@ -247,11 +286,13 @@ navbar li{
 
 .aside {
     flex: 1; /* Adjust this value to give more or less space to the aside */
-    padding: 20px;
+    padding: 19px;
     background-color: #f2f2f2;
+    border: #e0e0e0;
+    border-radius: 0%;
 }
 
 .footer2 {
-    background-color: #aaa;
-    padding: 10px;
+    background-color: black;
+    padding: 50px;
 }
