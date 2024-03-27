@@ -246,14 +246,14 @@ navbar li{
     background-color: #4CAF50; /* Green background */
     border: none; 
     color: white; 
-    padding: 12px 24px; /* Adjusted padding for a better shape */
+    padding: 12px 24px; 
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 14px; 
     margin: 5px 10px; 
     cursor: pointer; 
-    border-radius: 20px; /* More pronounced rounded borders for a modern look */
+    border-radius: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: background-color 0.3s, box-shadow 0.3s; 
 }
