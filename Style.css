@@ -28,6 +28,7 @@ h1, .caption, p {
     font-weight: bold;
     text-decoration: underline;
     font-size: large;
+    background: white;
 }
 .flexbox_container {
     display: flex;
@@ -246,14 +247,14 @@ navbar li{
     background-color: #4CAF50; /* Green background */
     border: none; 
     color: white; 
-    padding: 12px 24px; 
+    padding: 12px 24px; /* Adjusted padding for a better shape */
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 14px; 
     margin: 5px 10px; 
     cursor: pointer; 
-    border-radius: 20px; 
+    border-radius: 20px; /* More pronounced rounded borders for a modern look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: background-color 0.3s, box-shadow 0.3s; 
 }
@@ -296,3 +297,103 @@ navbar li{
     background-color: black;
     padding: 50px;
 }
+/* Form */
+.body4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("Images/Scam.jpg"); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center;
+}
+
+.form_bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 400px; /* Adjust width as needed */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+audio {
+    display: none;
+}
+.body5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("Images/scam2.jpg"); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center
+}
+.body6{
+        margin: 0;
+        padding: 0;
+        height: 145vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("Images/scam3.jpeg"); 
+     background-position: center;
+    }
+    
+    .textbox-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .textbox-container input[type="text"] {
+        width: 90%; /* Makes the text box long */
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .video-container {
+        /* Adjusts the video to be responsive while maintaining aspect ratio */
+        position: relative;
+        width: 90%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
