@@ -82,3 +82,30 @@ h1 {
 .about-nav{
     display: flex;
 }
+.sound-button:hover {
+  background-color: #555;
+  border-color: aqua;
+  color: lightgreen;
+  box-shadow: 0 0 8px lightblue;
+  animation: five_color 2s linear infinite;
+}
+@keyframes five_color {
+    0% {
+     background-color: red;   
+    }
+    20%{
+        background-color: orange;
+    }
+    40&{ 
+    background-color:red;
+    }
+    60%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: purple;
+    }
+    100%  {
+     background-color: purple;  
+    }
+}
