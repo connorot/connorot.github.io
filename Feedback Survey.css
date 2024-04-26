@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.email-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+}
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+.content {
+    padding: 20px;
+    line-height: 1.6;
+}
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.8em;
+}
+.button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+p {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: large;
+}
+header{
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: large;
+    background: white;
+}
+.email-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.email-info {
+    color: #333;
+}
+.email-subject {
+    font-weight: bold;
+    color: #555;
+}
+.email-actions button {
+    background: #f3f3f3;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+.email-actions button:hover {
+    background-color: #e7e7e7;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.email-actions button:active {
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
