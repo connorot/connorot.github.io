@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Details - Connor's Retro Hardware Depot</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Connor's Retro Hardware Depot</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="checkout.html" class="active">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="product-details-container">
+        <div class="product-image">
+            <img src="radio.jpg" alt="Vintage Radio">
+        </div>
+        <div class="product-info">
+            <h1>Gpu</h1>
+            <p>Price: $20.00</p>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" onchange="updatePrice()">
+            <p>Total Price: <span id="totalPrice">$20.00</span></p>
+            <button onclick="redirectToCheckout()">Checkout</button>
+            <div class="product-description">
+                <p>Detailed description of the product goes here...</p>
+            </div>
+            <div class="product-reviews">
+                <h3>Product Reviews</h3>
+                <p>User reviews will be displayed here...</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Connor's Retro Hardware Depot</p>
+    </footer>
+    <script>
+        const basePrice = 20.00;
+        function updatePrice() {
+            const quantity = document.getElementById('quantity').value;
+            document.getElementById('totalPrice').textContent = `$${(basePrice * quantity).toFixed(2)}`;
+        }
+        function redirectToCheckout() {
+    const quantity = document.getElementById('quantity').value;
+    const productName = encodeURIComponent(document.querySelector('.product-info h1').textContent);
+    const totalPrice = (basePrice * quantity).toFixed(2);
+    window.location.href = `checkout.html?name=${productName}&price=${totalPrice}`;
+} 
+    </script>
+</body>
+</html>

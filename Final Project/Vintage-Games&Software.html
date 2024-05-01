@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Products - Connor's Retro Hardware Depot</title>
+</head>
+<body>
+    <div><header>
+        <div class="logo">Connor's Retro Hardware Depot</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header></div>
+    <h1>Our Products</h1>
+    <div class="category-dropdown">
+        <div class="category-dropdown">
+            <label for="product-category">Choose a category:</label>
+            <select id="product-category">
+                <option value="Vintage-Games&Software.html">Vintage Games & Software</option>
+                <option value="products.html">Retro Gaming Consoles</option>
+                <option value="Old-SchoolComputers.html">Old-School Computers</option>
+            </select>
+        </div>        
+    <div class="products-grid">
+        <!-- Repeated product card for demonstration -->
+        <div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Oragan Trail">
+            <h3>Oragan Trail</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more product cards as needed -->
+        <div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div><div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="radio.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div><div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" onclick="window.location.href='product_details.html';">
+            <img src="path_to_radio_image.jpg" alt="Vintage Radio">
+            <h3>Vintage Radio</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var productCategoryDropdown = document.getElementById('product-category');
+            var currentUrl = window.location.href;
+
+            if (currentUrl.includes('Vintage-Games&Software.html')) {
+                productCategoryDropdown.value = 'Vintage-Games&Software.html';
+            } else if (currentUrl.includes('Old-SchoolComputers.html')) {
+                productCategoryDropdown.value = 'Old-SchoolComputers.html';
+            } else if (currentUrl.includes('products.html')) {
+                productCategoryDropdown.value = 'products.html';
+            }
+            productCategoryDropdown.addEventListener('change', function() {
+                window.location.href = this.value;
+            });
+        });
+    </script>
+    <footer>
+        <p>© 2024 Connor's Retro Hardware Depot</p>
+    </footer>
+</body>
+</html>
